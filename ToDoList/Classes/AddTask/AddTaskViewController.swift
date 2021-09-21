@@ -53,6 +53,7 @@ class AddTaskViewController: BaseVC, Storyboardable, UIGestureRecognizerDelegate
     @IBAction func didTapOnSave(_ sender: Any) {
         switch typeOfController {
         case .forNew:
+            taskTextView.selectAll(self)
             self.delegate?.didSetText(text: self.text)
         case .forEdit:
             self.delegate?.didEditText(text: self.text, index: dataIndex)
