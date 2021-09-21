@@ -17,6 +17,11 @@ class MainViewLayoutService: NSObject {
     }
 }
 extension MainViewLayoutService: EditTextViewDelegate {
+    func didEditText(text: String, index: Int) {
+        viewController.data?.filter({$0.isDone != true})[index].task = text
+        self.viewController.saveTaskToDatabase()
+    }
+    
     
     func didSetText(text: String) {
         let newTask = Tasks(context: self.viewController.context)

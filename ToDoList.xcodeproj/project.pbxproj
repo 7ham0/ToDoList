@@ -30,6 +30,7 @@
 		5B7977E226F9438E00021D96 /* UITextViewPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */; };
 		5B7977E526F9489500021D96 /* MainViewLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977E426F9489500021D96 /* MainViewLayoutService.swift */; };
 		5B7977E726F98DD800021D96 /* CompletedTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977E626F98DD800021D96 /* CompletedTaskDelegate.swift */; };
+		5B82B0A926FA716A0016F7D3 /* openFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B0A826FA716A0016F7D3 /* openFuncs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewPlaceHolder.swift; sourceTree = "<group>"; };
 		5B7977E426F9489500021D96 /* MainViewLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewLayoutService.swift; sourceTree = "<group>"; };
 		5B7977E626F98DD800021D96 /* CompletedTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskDelegate.swift; sourceTree = "<group>"; };
+		5B82B0A826FA716A0016F7D3 /* openFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openFuncs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		5B7977C626F8FEEC00021D96 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5B82B0A726FA71260016F7D3 /* Helpers */,
 				5B7977C726F8FF0900021D96 /* UIView.swift */,
 				5B7977DA26F93EC700021D96 /* UIViewController+General.swift */,
 				5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */,
@@ -236,6 +239,14 @@
 				5B7977E426F9489500021D96 /* MainViewLayoutService.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		5B82B0A726FA71260016F7D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5B82B0A826FA716A0016F7D3 /* openFuncs.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 				5B5AD78326FA074D00127117 /* UINavigationController.swift in Sources */,
 				5B7977E726F98DD800021D96 /* CompletedTaskDelegate.swift in Sources */,
 				5B7977D426F928EE00021D96 /* AddTaskViewController.swift in Sources */,
+				5B82B0A926FA716A0016F7D3 /* openFuncs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

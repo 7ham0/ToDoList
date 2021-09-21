@@ -12,9 +12,10 @@ class TasksTableViewCell: UITableViewCell {
     @IBOutlet weak var dateTextLabel: UILabel!
     @IBOutlet weak var buttonCheckMark: UIButton!
     
+    // - Delegate
     var delegate: CompletedTaskDelegate?
     var data: Tasks?
-    var index: Int?
+    var index: IndexPath?
     
     // - init
     static let identifier = "TasksTableViewCellIdentifier"
@@ -22,28 +23,26 @@ class TasksTableViewCell: UITableViewCell {
         let nib = UINib(nibName: "TasksTableViewCell", bundle: nil)
         return nib
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configure()
     }
     
-    func set(data: Tasks?, index: Int){
+    func set(data: Tasks?, index: IndexPath){
         self.data = data
         self.index = index
         taskTextLabel.text = self.data?.task
         dateTextLabel.text = self.data?.date
-//        guard let isDone = data?.isDone else {
-//            return
-//        }
-//        buttonCheckMark.isHidden = isDone
     }
     
     @IBAction func tapOnCheckMark(_ sander: Any) {
         guard let index = self.index else {
             return
         }
-        self.delegate?.didTapOnDone(index: index)
+        if index.section == 0 {
+            self.delegate?.didTapOnDone(index: index.row)
+        }
     }
 }
 extension TasksTableViewCell{

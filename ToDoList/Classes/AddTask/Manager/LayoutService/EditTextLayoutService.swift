@@ -16,7 +16,6 @@ class EditTextLayoutService: NSObject, UITextViewDelegate {
         super.init()
         configure()
     }
-    
 }
 
 //MARK: - Configure
@@ -27,7 +26,6 @@ extension EditTextLayoutService {
         self.configureTextView()
         self.configureMainView()
         self.configureActionButton()
-        
         self.viewController.taskTextView.becomeFirstResponder()
     }
     
@@ -40,9 +38,7 @@ extension EditTextLayoutService {
         viewController.taskTextView.delegate = viewController
         viewController.taskTextView.placeholder = viewController.placeholder
         viewController.taskTextView.text = viewController.text
-        
         viewController.taskTextView.keyboardType = viewController.keyboardType ?? .default
-        
         self.updateTextView()
     }
     
@@ -55,7 +51,6 @@ extension EditTextLayoutService {
         let fixedWidth = viewController.taskTextView.frame.size.width
         let newSize = viewController.taskTextView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
         viewController.taskTextView.frame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-        
         viewController.wrapperView.layoutIfNeeded()
     }
     

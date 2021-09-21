@@ -9,5 +9,6 @@ import UIKit
 
 protocol EditTextViewDelegate: AnyObject {
     func didSetText(text: String)
+    func didEditText(text: String, index: Int)
 }
 

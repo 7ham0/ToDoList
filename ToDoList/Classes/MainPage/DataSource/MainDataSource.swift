@@ -11,13 +11,17 @@ class MainDataSource: NSObject {
     
     private unowned let viewController: MainViewController
     private let tableView: UITableView
+    private let searchBar: UISearchBar
     
-    init(viewController: MainViewController, tableView: UITableView) {
+    init(viewController: MainViewController, tableView: UITableView, searchBar: UISearchBar) {
         self.viewController = viewController
         self.tableView = tableView
+        self.searchBar = searchBar
         super.init()
         configure()
     }
+//ToDo: Filter
+    var filteredData: [String]!
 }
 
 extension MainDataSource: UITableViewDelegate, UITableViewDataSource {
@@ -41,20 +45,32 @@ extension MainDataSource: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            //todo celltypes for changing data
-            let data = viewController.data?.filter({$0.isDone != true})
+            let data = viewController.data?.filter({$0.isDone != true})[indexPath.row]
             cell.delegate = self
-            cell.set(data: data?[indexPath.row], index: indexPath.row)
+            cell.set(data: data, index: indexPath)
             return cell
         case 1:
             let data = viewController.data?.filter({$0.isDone == true})[indexPath.row]
-            cell.set(data: data, index: indexPath.row)
-            cell.buttonCheckMark.layer.opacity = 0.3
+            cell.set(data: data, index: indexPath)
             return cell
         default:
             return UITableViewCell()
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            let vc = AddTaskViewController.instantiate()
+            vc.delegate = viewController.layoutService
+            vc.typeOfController = .forEdit
+            vc.dataIndex = indexPath.row
+            vc.text = viewController.data?.filter({$0.isDone != true})[indexPath.row].task ?? ""
+            vc.modalPresentationStyle = .overCurrentContext
+            viewController.present(vc)
+        } else {
+            return
+        }
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -93,10 +109,23 @@ extension MainDataSource: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+extension MainDataSource: UISearchBarDelegate {
+    
+    // This method updates filteredData based on the text in the Search Box
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if !searchText.isEmpty {
+            var predicate: NSPredicate = NSPredicate()
+            predicate = NSPredicate(format: "name contains[c] '\(searchText)'")
+            viewController.searchText = searchText
+        }
+    }
+}
+
 extension MainDataSource {
     func configure(){
         configureTableView()
         setupCells()
+        setupSearchBar()
     }
     func configureTableView(){
         tableView.delegate = self
@@ -105,15 +134,16 @@ extension MainDataSource {
     func setupCells(){
         tableView.register(TasksTableViewCell.nib(), forCellReuseIdentifier: TasksTableViewCell.identifier)
     }
+    
+    func setupSearchBar() {
+        searchBar.barStyle = .default
+        searchBar.delegate = self
+    }
 }
-
+// - Task done protocol
 extension MainDataSource: CompletedTaskDelegate {
     func didTapOnDone(index: Int) {
-        let data = (self.viewController.data?.filter({$0.isDone != true})[index])
-        guard let newData = data else {
-            return
-        }
-        newData.isDone = true
+        self.viewController.data?.filter({$0.isDone == false})[index].isDone = true
         do {
             try viewController.context.save()
         }

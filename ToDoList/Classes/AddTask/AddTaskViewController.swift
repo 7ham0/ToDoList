@@ -12,6 +12,7 @@ class AddTaskViewController: BaseVC, Storyboardable, UIGestureRecognizerDelegate
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var taskTextView: UITextView!
     @IBOutlet weak var saveTaskButton: UIButton!
+    var typeOfController: typeOfControllers = .forNew
     
     // - Managers
     fileprivate var layoutService: EditTextLayoutService!
@@ -23,13 +24,19 @@ class AddTaskViewController: BaseVC, Storyboardable, UIGestureRecognizerDelegate
     static var storyboardBundle: Bundle = .main
     
     // - Data
-    var text: String = ""
+    var text: String = "" //TODO: title Text Implementation
     var titleText: String = ""
-    var placeholder: String = ""
+    var placeholder: String = "" //TODO: placeholder
     var dataIndex: Int = 0
     var delegate: EditTextViewDelegate?
     var keyboardType: UIKeyboardType?
     var shouldShowActionButton = true
+    
+    // - Enum
+    enum typeOfControllers {
+        case forNew
+        case forEdit
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +51,13 @@ class AddTaskViewController: BaseVC, Storyboardable, UIGestureRecognizerDelegate
     }
     
     @IBAction func didTapOnSave(_ sender: Any) {
-        self.delegate?.didSetText(text: self.text)
+        switch typeOfController {
+        case .forNew:
+            self.delegate?.didSetText(text: self.text)
+        case .forEdit:
+            self.delegate?.didEditText(text: self.text, index: dataIndex)
+        }
+        
     }
 }
 
