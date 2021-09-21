@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: BaseVC {
+class MainViewController: BaseVC, Storyboardable {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addTaskButton: UIButton!
     
@@ -30,14 +30,11 @@ class MainViewController: BaseVC {
     }
     
     @IBAction func addTaskButtonAction(_ sender: Any) {
-        let vc = AddTaskViewController.fromStoryboard()
+        let vc = AddTaskViewController.instantiate()
         vc.delegate = self.layoutService
         vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc,animated: true)
+        present(vc)
     }
-    
-    override class var storyboardName: String { return "Main" }
-    override class var viewControllerId: String { return "mainVC" }
 }
 
 extension MainViewController {

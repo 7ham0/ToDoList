@@ -7,15 +7,20 @@
 
 import UIKit
 
-class AddTaskViewController: BaseVC, UIGestureRecognizerDelegate {
+class AddTaskViewController: BaseVC, Storyboardable, UIGestureRecognizerDelegate {
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var taskTextView: UITextView!
     @IBOutlet weak var saveTaskButton: UIButton!
     
-    //Managers
+    // - Managers
     fileprivate var layoutService: EditTextLayoutService!
     fileprivate var keyboardManager: AddTaskKeyboardManager!
+    
+    // - Init Storyboard
+    static var storyboardName: String = "Main"
+    static var storyboardIdentifier: String = "sddTaskVC"
+    static var storyboardBundle: Bundle = .main
     
     // - Data
     var text: String = ""
@@ -41,10 +46,6 @@ class AddTaskViewController: BaseVC, UIGestureRecognizerDelegate {
     @IBAction func didTapOnSave(_ sender: Any) {
         self.delegate?.didSetText(text: self.text)
     }
-
-    
-    override class var storyboardName: String { return "Main" }
-    override class var viewControllerId: String { return "addTaskVC" }
 }
 
 extension AddTaskViewController {

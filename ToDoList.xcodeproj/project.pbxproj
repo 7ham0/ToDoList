@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5AD78326FA074D00127117 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AD78226FA074D00127117 /* UINavigationController.swift */; };
+		5B5AD78726FA092000127117 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AD78626FA092000127117 /* Constants.swift */; };
+		5B5AD78A26FA0C6300127117 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AD78926FA0C6300127117 /* Storyboardable.swift */; };
 		5B79779F26F8E63A00021D96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79779E26F8E63A00021D96 /* AppDelegate.swift */; };
 		5B7977A126F8E63A00021D96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A026F8E63A00021D96 /* SceneDelegate.swift */; };
 		5B7977A326F8E63A00021D96 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A226F8E63A00021D96 /* MainViewController.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B5AD78226FA074D00127117 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		5B5AD78626FA092000127117 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5B5AD78926FA0C6300127117 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		5B79779B26F8E63A00021D96 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B79779E26F8E63A00021D96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B7977A026F8E63A00021D96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5AD78826FA0C4F00127117 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5B5AD78926FA0C6300127117 /* Storyboardable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5B79779226F8E63A00021D96 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +104,7 @@
 				5B7977B626F8E82D00021D96 /* Storyboards */,
 				5B7977B926F8E8A300021D96 /* Supportive Files */,
 				5B7977B826F8E88200021D96 /* Resources */,
+				5B5AD78826FA0C4F00127117 /* Protocols */,
 				5B7977AF26F8E63B00021D96 /* Info.plist */,
 				5B7977AC26F8E63B00021D96 /* LaunchScreen.storyboard */,
 			);
@@ -141,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5B7977C626F8FEEC00021D96 /* Extensions */,
+				5B5AD78626FA092000127117 /* Constants.swift */,
 			);
 			path = "Supportive Files";
 			sourceTree = "<group>";
@@ -168,6 +184,7 @@
 				5B7977C726F8FF0900021D96 /* UIView.swift */,
 				5B7977DA26F93EC700021D96 /* UIViewController+General.swift */,
 				5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */,
+				5B5AD78226FA074D00127117 /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -309,7 +326,10 @@
 				5B7977DB26F93EC700021D96 /* UIViewController+General.swift in Sources */,
 				5B7977C226F8F3AC00021D96 /* TasksTableViewCell.swift in Sources */,
 				5B7977C826F8FF0900021D96 /* UIView.swift in Sources */,
+				5B5AD78726FA092000127117 /* Constants.swift in Sources */,
+				5B5AD78A26FA0C6300127117 /* Storyboardable.swift in Sources */,
 				5B7977C526F8F5D000021D96 /* MainDataSource.swift in Sources */,
+				5B5AD78326FA074D00127117 /* UINavigationController.swift in Sources */,
 				5B7977E726F98DD800021D96 /* CompletedTaskDelegate.swift in Sources */,
 				5B7977D426F928EE00021D96 /* AddTaskViewController.swift in Sources */,
 			);
