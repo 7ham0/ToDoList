@@ -9,23 +9,51 @@
 /* Begin PBXBuildFile section */
 		5B79779F26F8E63A00021D96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79779E26F8E63A00021D96 /* AppDelegate.swift */; };
 		5B7977A126F8E63A00021D96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A026F8E63A00021D96 /* SceneDelegate.swift */; };
-		5B7977A326F8E63A00021D96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A226F8E63A00021D96 /* ViewController.swift */; };
+		5B7977A326F8E63A00021D96 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A226F8E63A00021D96 /* MainViewController.swift */; };
 		5B7977A626F8E63A00021D96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977A426F8E63A00021D96 /* Main.storyboard */; };
 		5B7977A926F8E63A00021D96 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A726F8E63A00021D96 /* ToDoList.xcdatamodeld */; };
 		5B7977AB26F8E63B00021D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977AA26F8E63B00021D96 /* Assets.xcassets */; };
 		5B7977AE26F8E63B00021D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977AC26F8E63B00021D96 /* LaunchScreen.storyboard */; };
+		5B7977BB26F8EA8300021D96 /* TDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977BA26F8EA8300021D96 /* TDNavigationController.swift */; };
+		5B7977BD26F8EAC600021D96 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977BC26F8EAC600021D96 /* BaseVC.swift */; };
+		5B7977C226F8F3AC00021D96 /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977C026F8F3AC00021D96 /* TasksTableViewCell.swift */; };
+		5B7977C326F8F3AC00021D96 /* TasksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977C126F8F3AC00021D96 /* TasksTableViewCell.xib */; };
+		5B7977C526F8F5D000021D96 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977C426F8F5D000021D96 /* MainDataSource.swift */; };
+		5B7977C826F8FF0900021D96 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977C726F8FF0900021D96 /* UIView.swift */; };
+		5B7977D426F928EE00021D96 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977D326F928EE00021D96 /* AddTaskViewController.swift */; };
+		5B7977D926F929B400021D96 /* AddTaskKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977D826F929B400021D96 /* AddTaskKeyboardManager.swift */; };
+		5B7977DB26F93EC700021D96 /* UIViewController+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977DA26F93EC700021D96 /* UIViewController+General.swift */; };
+		5B7977DE26F9413300021D96 /* EditTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977DD26F9413300021D96 /* EditTextViewDelegate.swift */; };
+		5B7977E026F941D000021D96 /* EditTextLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977DF26F941D000021D96 /* EditTextLayoutService.swift */; };
+		5B7977E226F9438E00021D96 /* UITextViewPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */; };
+		5B7977E526F9489500021D96 /* MainViewLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977E426F9489500021D96 /* MainViewLayoutService.swift */; };
+		5B7977E726F98DD800021D96 /* CompletedTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977E626F98DD800021D96 /* CompletedTaskDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B79779B26F8E63A00021D96 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B79779E26F8E63A00021D96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B7977A026F8E63A00021D96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B7977A226F8E63A00021D96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B7977A226F8E63A00021D96 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5B7977A526F8E63A00021D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B7977A826F8E63A00021D96 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		5B7977AA26F8E63B00021D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7977AD26F8E63B00021D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7977AF26F8E63B00021D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7977BA26F8EA8300021D96 /* TDNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDNavigationController.swift; sourceTree = "<group>"; };
+		5B7977BC26F8EAC600021D96 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		5B7977C026F8F3AC00021D96 /* TasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
+		5B7977C126F8F3AC00021D96 /* TasksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksTableViewCell.xib; sourceTree = "<group>"; };
+		5B7977C426F8F5D000021D96 /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		5B7977C726F8FF0900021D96 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5B7977D326F928EE00021D96 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		5B7977D826F929B400021D96 /* AddTaskKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskKeyboardManager.swift; sourceTree = "<group>"; };
+		5B7977DA26F93EC700021D96 /* UIViewController+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+General.swift"; sourceTree = "<group>"; };
+		5B7977DD26F9413300021D96 /* EditTextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextViewDelegate.swift; sourceTree = "<group>"; };
+		5B7977DF26F941D000021D96 /* EditTextLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextLayoutService.swift; sourceTree = "<group>"; };
+		5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewPlaceHolder.swift; sourceTree = "<group>"; };
+		5B7977E426F9489500021D96 /* MainViewLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewLayoutService.swift; sourceTree = "<group>"; };
+		5B7977E626F98DD800021D96 /* CompletedTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +86,142 @@
 		5B79779D26F8E63A00021D96 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				5B79779E26F8E63A00021D96 /* AppDelegate.swift */,
-				5B7977A026F8E63A00021D96 /* SceneDelegate.swift */,
-				5B7977A226F8E63A00021D96 /* ViewController.swift */,
-				5B7977A426F8E63A00021D96 /* Main.storyboard */,
-				5B7977AA26F8E63B00021D96 /* Assets.xcassets */,
-				5B7977AC26F8E63B00021D96 /* LaunchScreen.storyboard */,
+				5B7977B526F8E80500021D96 /* Classes */,
+				5B7977B626F8E82D00021D96 /* Storyboards */,
+				5B7977B926F8E8A300021D96 /* Supportive Files */,
+				5B7977B826F8E88200021D96 /* Resources */,
 				5B7977AF26F8E63B00021D96 /* Info.plist */,
-				5B7977A726F8E63A00021D96 /* ToDoList.xcdatamodeld */,
+				5B7977AC26F8E63B00021D96 /* LaunchScreen.storyboard */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		5B7977B526F8E80500021D96 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977D226F928C700021D96 /* AddTask */,
+				5B7977B726F8E85A00021D96 /* MainPage */,
+				5B7977A026F8E63A00021D96 /* SceneDelegate.swift */,
+				5B79779E26F8E63A00021D96 /* AppDelegate.swift */,
+				5B7977BA26F8EA8300021D96 /* TDNavigationController.swift */,
+				5B7977BC26F8EAC600021D96 /* BaseVC.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5B7977B626F8E82D00021D96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977A426F8E63A00021D96 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5B7977B726F8E85A00021D96 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977E326F9484600021D96 /* Manager */,
+				5B7977BF26F8F37D00021D96 /* Cells */,
+				5B7977BE26F8F37100021D96 /* DataSource */,
+				5B7977A226F8E63A00021D96 /* MainViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		5B7977B826F8E88200021D96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977C926F9066B00021D96 /* DataBase */,
+				5B7977AA26F8E63B00021D96 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B7977B926F8E8A300021D96 /* Supportive Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977C626F8FEEC00021D96 /* Extensions */,
+			);
+			path = "Supportive Files";
+			sourceTree = "<group>";
+		};
+		5B7977BE26F8F37100021D96 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977C426F8F5D000021D96 /* MainDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		5B7977BF26F8F37D00021D96 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977C026F8F3AC00021D96 /* TasksTableViewCell.swift */,
+				5B7977C126F8F3AC00021D96 /* TasksTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5B7977C626F8FEEC00021D96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977C726F8FF0900021D96 /* UIView.swift */,
+				5B7977DA26F93EC700021D96 /* UIViewController+General.swift */,
+				5B7977E126F9438E00021D96 /* UITextViewPlaceHolder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B7977C926F9066B00021D96 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977A726F8E63A00021D96 /* ToDoList.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		5B7977D226F928C700021D96 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977DC26F9411500021D96 /* Protocols */,
+				5B7977D626F9297100021D96 /* Manager */,
+				5B7977D326F928EE00021D96 /* AddTaskViewController.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		5B7977D526F9296200021D96 /* LayoutService */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977D826F929B400021D96 /* AddTaskKeyboardManager.swift */,
+				5B7977DF26F941D000021D96 /* EditTextLayoutService.swift */,
+			);
+			path = LayoutService;
+			sourceTree = "<group>";
+		};
+		5B7977D626F9297100021D96 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977D526F9296200021D96 /* LayoutService */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5B7977DC26F9411500021D96 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977DD26F9413300021D96 /* EditTextViewDelegate.swift */,
+				5B7977E626F98DD800021D96 /* CompletedTaskDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5B7977E326F9484600021D96 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5B7977E426F9489500021D96 /* MainViewLayoutService.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7977C326F8F3AC00021D96 /* TasksTableViewCell.xib in Resources */,
 				5B7977AE26F8E63B00021D96 /* LaunchScreen.storyboard in Resources */,
 				5B7977AB26F8E63B00021D96 /* Assets.xcassets in Resources */,
 				5B7977A626F8E63A00021D96 /* Main.storyboard in Resources */,
@@ -140,10 +295,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7977A326F8E63A00021D96 /* ViewController.swift in Sources */,
+				5B7977A326F8E63A00021D96 /* MainViewController.swift in Sources */,
+				5B7977BD26F8EAC600021D96 /* BaseVC.swift in Sources */,
+				5B7977E226F9438E00021D96 /* UITextViewPlaceHolder.swift in Sources */,
+				5B7977DE26F9413300021D96 /* EditTextViewDelegate.swift in Sources */,
 				5B79779F26F8E63A00021D96 /* AppDelegate.swift in Sources */,
+				5B7977E526F9489500021D96 /* MainViewLayoutService.swift in Sources */,
+				5B7977E026F941D000021D96 /* EditTextLayoutService.swift in Sources */,
 				5B7977A126F8E63A00021D96 /* SceneDelegate.swift in Sources */,
+				5B7977BB26F8EA8300021D96 /* TDNavigationController.swift in Sources */,
 				5B7977A926F8E63A00021D96 /* ToDoList.xcdatamodeld in Sources */,
+				5B7977D926F929B400021D96 /* AddTaskKeyboardManager.swift in Sources */,
+				5B7977DB26F93EC700021D96 /* UIViewController+General.swift in Sources */,
+				5B7977C226F8F3AC00021D96 /* TasksTableViewCell.swift in Sources */,
+				5B7977C826F8FF0900021D96 /* UIView.swift in Sources */,
+				5B7977C526F8F5D000021D96 /* MainDataSource.swift in Sources */,
+				5B7977E726F98DD800021D96 /* CompletedTaskDelegate.swift in Sources */,
+				5B7977D426F928EE00021D96 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

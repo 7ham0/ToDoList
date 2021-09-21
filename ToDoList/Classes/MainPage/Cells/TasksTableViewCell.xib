@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="TasksTableViewCell" customModule="ToDoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="634" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="634" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYe-g7-xFv">
+                        <rect key="frame" x="35" y="50.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Kqf-yi-QS2"/>
+                            <constraint firstAttribute="width" constant="40" id="L1P-5F-zKS"/>
+                        </constraints>
+                        <state key="normal">
+                            <imageReference key="image" image="circle" catalog="system" symbolScale="large" renderingMode="template"/>
+                        </state>
+                        <connections>
+                            <action selector="tapOnCheckMark:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M5l-ej-EoI"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Is A task" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m22-iC-HfX">
+                        <rect key="frame" x="90" y="14" width="509" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="tvz-uE-jnu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" name="Dark_Font"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.02.2005" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBO-AZ-MrC">
+                        <rect key="frame" x="570" y="122.5" width="59" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" name="Light_Font"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="m22-iC-HfX" secondAttribute="bottom" constant="3" id="Edo-w5-FF0"/>
+                    <constraint firstAttribute="bottom" secondItem="XBO-AZ-MrC" secondAttribute="bottom" constant="5" id="O6r-bk-cHX"/>
+                    <constraint firstItem="lYe-g7-xFv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YZY-65-7fp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="m22-iC-HfX" secondAttribute="trailing" constant="15" id="ZXZ-KU-X6w"/>
+                    <constraint firstItem="m22-iC-HfX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eMf-20-ngY"/>
+                    <constraint firstAttribute="trailing" secondItem="XBO-AZ-MrC" secondAttribute="trailing" constant="5" id="hd2-rt-dhP"/>
+                    <constraint firstItem="m22-iC-HfX" firstAttribute="leading" secondItem="lYe-g7-xFv" secondAttribute="trailing" constant="15" id="qPS-me-mGe"/>
+                    <constraint firstItem="lYe-g7-xFv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="v25-jb-X7A"/>
+                    <constraint firstItem="m22-iC-HfX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="xue-D4-MKM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonCheckMark" destination="lYe-g7-xFv" id="Kqg-7M-vXn"/>
+                <outlet property="dateTextLabel" destination="XBO-AZ-MrC" id="CoQ-mW-EFP"/>
+                <outlet property="taskTextLabel" destination="m22-iC-HfX" id="Rin-wr-J54"/>
+            </connections>
+            <point key="canvasLocation" x="97.101449275362327" y="97.433035714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <namedColor name="Dark_Font">
+            <color red="0.20399999618530273" green="0.23899999260902405" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light_Font">
+            <color red="0.47099998593330383" green="0.49000000953674316" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
