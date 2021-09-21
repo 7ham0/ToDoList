@@ -17,7 +17,6 @@
 		5B7977A926F8E63A00021D96 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977A726F8E63A00021D96 /* ToDoList.xcdatamodeld */; };
 		5B7977AB26F8E63B00021D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977AA26F8E63B00021D96 /* Assets.xcassets */; };
 		5B7977AE26F8E63B00021D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977AC26F8E63B00021D96 /* LaunchScreen.storyboard */; };
-		5B7977BB26F8EA8300021D96 /* TDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977BA26F8EA8300021D96 /* TDNavigationController.swift */; };
 		5B7977BD26F8EAC600021D96 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977BC26F8EAC600021D96 /* BaseVC.swift */; };
 		5B7977C226F8F3AC00021D96 /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7977C026F8F3AC00021D96 /* TasksTableViewCell.swift */; };
 		5B7977C326F8F3AC00021D96 /* TasksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7977C126F8F3AC00021D96 /* TasksTableViewCell.xib */; };
@@ -46,7 +45,6 @@
 		5B7977AA26F8E63B00021D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7977AD26F8E63B00021D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7977AF26F8E63B00021D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B7977BA26F8EA8300021D96 /* TDNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDNavigationController.swift; sourceTree = "<group>"; };
 		5B7977BC26F8EAC600021D96 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		5B7977C026F8F3AC00021D96 /* TasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
 		5B7977C126F8F3AC00021D96 /* TasksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksTableViewCell.xib; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				5B7977B726F8E85A00021D96 /* MainPage */,
 				5B7977A026F8E63A00021D96 /* SceneDelegate.swift */,
 				5B79779E26F8E63A00021D96 /* AppDelegate.swift */,
-				5B7977BA26F8EA8300021D96 /* TDNavigationController.swift */,
 				5B7977BC26F8EAC600021D96 /* BaseVC.swift */,
 			);
 			path = Classes;
@@ -320,7 +317,6 @@
 				5B7977E526F9489500021D96 /* MainViewLayoutService.swift in Sources */,
 				5B7977E026F941D000021D96 /* EditTextLayoutService.swift in Sources */,
 				5B7977A126F8E63A00021D96 /* SceneDelegate.swift in Sources */,
-				5B7977BB26F8EA8300021D96 /* TDNavigationController.swift in Sources */,
 				5B7977A926F8E63A00021D96 /* ToDoList.xcdatamodeld in Sources */,
 				5B7977D926F929B400021D96 /* AddTaskKeyboardManager.swift in Sources */,
 				5B7977DB26F93EC700021D96 /* UIViewController+General.swift in Sources */,
